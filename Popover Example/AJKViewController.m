@@ -7,23 +7,44 @@
 //
 
 #import "AJKViewController.h"
+#import "SYMLPopover.h"
+
 
 @interface AJKViewController ()
 
+@property (strong) SYMLPopover *popover;
+
 @end
 
+
 @implementation AJKViewController
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	UIViewController *contentViewController = [[UIViewController alloc] initWithNibName:@"Content View" bundle:nil];
+	SYMLPopover *popover = [[SYMLPopover alloc] initWithContentViewController:contentViewController];
+	self.popover = popover;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)presentPopoverUpArrow:(id)sender {
+	[self.popover presentPopoverFromView:sender arrowDirection:SYMLPopoverArrowDirectionUp offset:CGPointZero animated:TRUE];
 }
+
+- (IBAction)presentPopoverDownArrow:(id)sender {
+	[self.popover presentPopoverFromView:sender arrowDirection:SYMLPopoverArrowDirectionDown offset:CGPointZero animated:TRUE];
+}
+
+- (IBAction)presentPopoverLeftArrow:(id)sender {
+	[self.popover presentPopoverFromView:sender arrowDirection:SYMLPopoverArrowDirectionLeft offset:CGPointZero animated:TRUE];
+}
+
+- (IBAction)presentPopoverRightArrow:(id)sender {
+	[self.popover presentPopoverFromView:sender arrowDirection:SYMLPopoverArrowDirectionRight offset:CGPointZero animated:TRUE];
+}
+
 
 @end

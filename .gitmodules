@@ -1,0 +1,3 @@
+[submodule "SYMLFoundation"]
+	path = SYMLFoundation
+	url = git@github.com:inquisitiveSoft/SYMLFoundation.git

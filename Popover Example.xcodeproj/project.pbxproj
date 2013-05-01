@@ -17,8 +17,13 @@
 		4A4D8485173102D200CC0B46 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D8484173102D200CC0B46 /* Default@2x.png */; };
 		4A4D8487173102D200CC0B46 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D8486173102D200CC0B46 /* Default-568h@2x.png */; };
 		4A4D848A173102D200CC0B46 /* AJKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D8489173102D200CC0B46 /* AJKViewController.m */; };
-		4A4D848D173102D200CC0B46 /* AJKViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D848B173102D200CC0B46 /* AJKViewController_iPhone.xib */; };
-		4A4D8490173102D200CC0B46 /* AJKViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D848E173102D200CC0B46 /* AJKViewController_iPad.xib */; };
+		4A4D8490173102D200CC0B46 /* Root View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D848E173102D200CC0B46 /* Root View.xib */; };
+		4A4D84A51731038C00CC0B46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4D84A41731038C00CC0B46 /* QuartzCore.framework */; };
+		4A846579173104A400A099E8 /* SYMLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A846577173104A400A099E8 /* SYMLAnimation.m */; };
+		4A84657E173104B900A099E8 /* SYMLPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A84657B173104B900A099E8 /* SYMLPopover.m */; };
+		4A84657F173104B900A099E8 /* SYMLPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A84657D173104B900A099E8 /* SYMLPopoverView.m */; };
+		4A8465821731057100A099E8 /* Content View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8465801731057100A099E8 /* Content View.xib */; };
+		4A846585173107EF00A099E8 /* UIView+ConstraintAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A846584173107EF00A099E8 /* UIView+ConstraintAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +42,17 @@
 		4A4D8486173102D200CC0B46 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4A4D8488173102D200CC0B46 /* AJKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJKViewController.h; sourceTree = "<group>"; };
 		4A4D8489173102D200CC0B46 /* AJKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJKViewController.m; sourceTree = "<group>"; };
-		4A4D848C173102D200CC0B46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AJKViewController_iPhone.xib; sourceTree = "<group>"; };
-		4A4D848F173102D200CC0B46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AJKViewController_iPad.xib; sourceTree = "<group>"; };
+		4A4D848F173102D200CC0B46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/Root View.xib"; sourceTree = "<group>"; };
+		4A4D84A41731038C00CC0B46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4A846576173104A400A099E8 /* SYMLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYMLAnimation.h; path = SYMLFoundation/iOS/Classes/SYMLAnimation.h; sourceTree = "<group>"; };
+		4A846577173104A400A099E8 /* SYMLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYMLAnimation.m; path = SYMLFoundation/iOS/Classes/SYMLAnimation.m; sourceTree = "<group>"; };
+		4A84657A173104B900A099E8 /* SYMLPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYMLPopover.h; path = SYMLFoundation/iOS/Popover/SYMLPopover.h; sourceTree = "<group>"; };
+		4A84657B173104B900A099E8 /* SYMLPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYMLPopover.m; path = SYMLFoundation/iOS/Popover/SYMLPopover.m; sourceTree = "<group>"; };
+		4A84657C173104B900A099E8 /* SYMLPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYMLPopoverView.h; path = SYMLFoundation/iOS/Popover/SYMLPopoverView.h; sourceTree = "<group>"; };
+		4A84657D173104B900A099E8 /* SYMLPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYMLPopoverView.m; path = SYMLFoundation/iOS/Popover/SYMLPopoverView.m; sourceTree = "<group>"; };
+		4A8465811731057100A099E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/Content View.xib"; sourceTree = "<group>"; };
+		4A846583173107EF00A099E8 /* UIView+ConstraintAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ConstraintAdditions.h"; path = "SYMLFoundation/iOS/Categories/UIView+ConstraintAdditions.h"; sourceTree = "<group>"; };
+		4A846584173107EF00A099E8 /* UIView+ConstraintAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ConstraintAdditions.m"; path = "SYMLFoundation/iOS/Categories/UIView+ConstraintAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +63,7 @@
 				4A4D8471173102D200CC0B46 /* UIKit.framework in Frameworks */,
 				4A4D8473173102D200CC0B46 /* Foundation.framework in Frameworks */,
 				4A4D8475173102D200CC0B46 /* CoreGraphics.framework in Frameworks */,
+				4A4D84A51731038C00CC0B46 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +73,7 @@
 		4A4D8464173102D200CC0B46 = {
 			isa = PBXGroup;
 			children = (
+				4A4D84961731030D00CC0B46 /* Popover Source */,
 				4A4D8476173102D200CC0B46 /* Popover Example */,
 				4A4D846F173102D200CC0B46 /* Frameworks */,
 				4A4D846E173102D200CC0B46 /* Products */,
@@ -78,6 +94,7 @@
 				4A4D8470173102D200CC0B46 /* UIKit.framework */,
 				4A4D8472173102D200CC0B46 /* Foundation.framework */,
 				4A4D8474173102D200CC0B46 /* CoreGraphics.framework */,
+				4A4D84A41731038C00CC0B46 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,8 +106,8 @@
 				4A4D8480173102D200CC0B46 /* AJKAppDelegate.m */,
 				4A4D8488173102D200CC0B46 /* AJKViewController.h */,
 				4A4D8489173102D200CC0B46 /* AJKViewController.m */,
-				4A4D848B173102D200CC0B46 /* AJKViewController_iPhone.xib */,
-				4A4D848E173102D200CC0B46 /* AJKViewController_iPad.xib */,
+				4A4D848E173102D200CC0B46 /* Root View.xib */,
+				4A8465801731057100A099E8 /* Content View.xib */,
 				4A4D8477173102D200CC0B46 /* Supporting Files */,
 			);
 			path = "Popover Example";
@@ -108,6 +125,21 @@
 				4A4D8486173102D200CC0B46 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A4D84961731030D00CC0B46 /* Popover Source */ = {
+			isa = PBXGroup;
+			children = (
+				4A84657A173104B900A099E8 /* SYMLPopover.h */,
+				4A84657B173104B900A099E8 /* SYMLPopover.m */,
+				4A84657C173104B900A099E8 /* SYMLPopoverView.h */,
+				4A84657D173104B900A099E8 /* SYMLPopoverView.m */,
+				4A846576173104A400A099E8 /* SYMLAnimation.h */,
+				4A846577173104A400A099E8 /* SYMLAnimation.m */,
+				4A846583173107EF00A099E8 /* UIView+ConstraintAdditions.h */,
+				4A846584173107EF00A099E8 /* UIView+ConstraintAdditions.m */,
+			);
+			name = "Popover Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +198,8 @@
 				4A4D8483173102D200CC0B46 /* Default.png in Resources */,
 				4A4D8485173102D200CC0B46 /* Default@2x.png in Resources */,
 				4A4D8487173102D200CC0B46 /* Default-568h@2x.png in Resources */,
-				4A4D848D173102D200CC0B46 /* AJKViewController_iPhone.xib in Resources */,
-				4A4D8490173102D200CC0B46 /* AJKViewController_iPad.xib in Resources */,
+				4A4D8490173102D200CC0B46 /* Root View.xib in Resources */,
+				4A8465821731057100A099E8 /* Content View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +213,10 @@
 				4A4D847D173102D200CC0B46 /* main.m in Sources */,
 				4A4D8481173102D200CC0B46 /* AJKAppDelegate.m in Sources */,
 				4A4D848A173102D200CC0B46 /* AJKViewController.m in Sources */,
+				4A846579173104A400A099E8 /* SYMLAnimation.m in Sources */,
+				4A84657E173104B900A099E8 /* SYMLPopover.m in Sources */,
+				4A84657F173104B900A099E8 /* SYMLPopoverView.m in Sources */,
+				4A846585173107EF00A099E8 /* UIView+ConstraintAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +231,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4A4D848B173102D200CC0B46 /* AJKViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A4D848C173102D200CC0B46 /* en */,
-			);
-			name = AJKViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		4A4D848E173102D200CC0B46 /* AJKViewController_iPad.xib */ = {
+		4A4D848E173102D200CC0B46 /* Root View.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A4D848F173102D200CC0B46 /* en */,
 			);
-			name = AJKViewController_iPad.xib;
+			name = "Root View.xib";
+			sourceTree = "<group>";
+		};
+		4A8465801731057100A099E8 /* Content View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8465811731057100A099E8 /* en */,
+			);
+			name = "Content View.xib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +315,7 @@
 				GCC_PREFIX_HEADER = "Popover Example/Popover Example-Prefix.pch";
 				INFOPLIST_FILE = "Popover Example/Popover Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +327,7 @@
 				GCC_PREFIX_HEADER = "Popover Example/Popover Example-Prefix.pch";
 				INFOPLIST_FILE = "Popover Example/Popover Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -313,6 +351,7 @@
 				4A4D8495173102D200CC0B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
